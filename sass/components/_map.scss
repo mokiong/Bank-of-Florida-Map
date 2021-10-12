@@ -1,0 +1,97 @@
+.map {
+   position: relative;
+
+   &__image--background {
+      width: 100%;
+      max-width: 720px;
+   }
+
+   ///////////////////// ICONS
+   &__icon {
+      position: absolute;
+
+      &--arayat {
+         width: 30%;
+         left: 50%;
+         top: 9%;
+      }
+
+      &--city {
+         width: 30%;
+         left: 15%;
+         top: 9%;
+      }
+
+      &--porac-miyamit-falls {
+         width: 15%;
+         left: 7%;
+         top: 23%;
+      }
+
+      &--building {
+         width: 11%;
+         left: 47%;
+         top: 17.5%;
+      }
+
+      &--migratoryBirds {
+         width: 22%;
+         left: 76%;
+         top: 13%;
+      }
+
+      &--nabuclodMountains {
+         width: 25%;
+         left: 5%;
+         top: 39%;
+      }
+   }
+
+   ///////////////////// PINS
+   &__pin {
+      width: 5%;
+      position: absolute;
+
+      &--dau {
+         left: 32%;
+         top: 2.3%;
+      }
+
+      &--magalang {
+         left: 48%;
+         top: 1.1%;
+      }
+
+      &--arayat {
+         left: 60%;
+         top: 13%;
+         z-index: 2;
+      }
+
+      &--angeles-city {
+         left: 30%;
+         top: 19%;
+         z-index: 2;
+      }
+
+      &--porac {
+         left: 22%;
+         top: 29%;
+      }
+
+      &--sanFernando {
+         left: 43%;
+         top: 30%;
+      }
+
+      &--staAna {
+         left: 62%;
+         top: 25%;
+      }
+
+      &--canbada {
+         left: 76%;
+         top: 28%;
+      }
+   }
+}

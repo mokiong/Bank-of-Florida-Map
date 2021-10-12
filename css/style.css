@@ -1,96 +1,63 @@
 .map {
-  border: solid;
-  border-color: red;
   position: relative; }
   .map__image--background {
     width: 100%;
     max-width: 720px; }
-  .map__icon--arayat {
-    width: 30%;
-    min-width: 10rem;
-    position: absolute;
-    left: 50%;
-    top: 9%; }
-  .map__icon--city {
-    width: 30%;
-    min-width: 10rem;
-    position: absolute;
-    left: 15%;
-    top: 9%; }
-  .map__icon--poracMiyamitFalls {
-    width: 15%;
-    min-width: 5rem;
-    position: absolute;
-    left: 7%;
-    top: 23%; }
-  .map__icon--building {
-    width: 11%;
-    min-width: 5rem;
-    position: absolute;
-    left: 47%;
-    top: 17.5%; }
-  .map__icon--migratoryBirds {
-    width: 22%;
-    min-width: 7.6rem;
-    position: absolute;
-    left: 76%;
-    top: 13%; }
-  .map__icon--nabuclodMountains {
-    width: 30%;
-    min-width: 10rem;
-    position: absolute;
-    left: 76%;
-    top: 13%; }
-  .map__pin--dau {
+  .map__icon {
+    position: absolute; }
+    .map__icon--arayat {
+      width: 30%;
+      left: 50%;
+      top: 9%; }
+    .map__icon--city {
+      width: 30%;
+      left: 15%;
+      top: 9%; }
+    .map__icon--porac-miyamit-falls {
+      width: 15%;
+      left: 7%;
+      top: 23%; }
+    .map__icon--building {
+      width: 11%;
+      left: 47%;
+      top: 17.5%; }
+    .map__icon--migratoryBirds {
+      width: 22%;
+      left: 76%;
+      top: 13%; }
+    .map__icon--nabuclodMountains {
+      width: 25%;
+      left: 5%;
+      top: 39%; }
+  .map__pin {
     width: 5%;
-    min-width: 2.2rem;
-    position: absolute;
-    left: 32%;
-    top: 2.3%; }
-  .map__pin--magalang {
-    width: 5%;
-    min-width: 2.2rem;
-    position: absolute;
-    left: 48%;
-    top: 1.1%; }
-  .map__pin--arayat {
-    width: 5%;
-    min-width: 2.2rem;
-    position: absolute;
-    left: 60%;
-    top: 13%;
-    z-index: 2; }
-  .map__pin--angelesCity {
-    width: 5%;
-    min-width: 2.2rem;
-    position: absolute;
-    left: 30%;
-    top: 19%;
-    z-index: 2; }
-  .map__pin--porac {
-    width: 5%;
-    min-width: 2.2rem;
-    position: absolute;
-    left: 22%;
-    top: 29%; }
-  .map__pin--sanFernando {
-    width: 5%;
-    min-width: 2.2rem;
-    position: absolute;
-    left: 43%;
-    top: 30%; }
-  .map__pin--staAna {
-    width: 5%;
-    min-width: 2.2rem;
-    position: absolute;
-    left: 62%;
-    top: 25%; }
-  .map__pin--canbada {
-    width: 5%;
-    min-width: 2.2rem;
-    position: absolute;
-    left: 76%;
-    top: 28%; }
+    position: absolute; }
+    .map__pin--dau {
+      left: 32%;
+      top: 2.3%; }
+    .map__pin--magalang {
+      left: 48%;
+      top: 1.1%; }
+    .map__pin--arayat {
+      left: 60%;
+      top: 13%;
+      z-index: 2; }
+    .map__pin--angeles-city {
+      left: 30%;
+      top: 19%;
+      z-index: 2; }
+    .map__pin--porac {
+      left: 22%;
+      top: 29%; }
+    .map__pin--sanFernando {
+      left: 43%;
+      top: 30%; }
+    .map__pin--staAna {
+      left: 62%;
+      top: 25%; }
+    .map__pin--canbada {
+      left: 76%;
+      top: 28%; }
 
 *,
 *::before,
@@ -104,8 +71,6 @@ html {
   font-size: 62.5%; }
 
 .container {
-  border: solid;
-  margin: 2rem;
   display: flex;
   align-items: center;
   justify-content: center; }
