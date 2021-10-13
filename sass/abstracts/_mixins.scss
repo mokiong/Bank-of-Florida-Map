@@ -1,5 +1,7 @@
-@mixin iconSize {
-   width: 30%;
-   min-width: 10rem;
-   position: absolute;
+@mixin location {
+    font-size: 1.5rem;
+    background-color: $color-main-white;
+    border-radius: 50px;
+    padding: 0 1rem;
+    z-index: 1000;
 }
