@@ -194,11 +194,16 @@
         }
     }
 
-    &__lotaion-name {
+    &__location-name {
         position: absolute;
+        font-size: 1.5rem;
+        background-color: $color-main-white;
+        border-radius: 50px;
+        padding: 0 1rem;
 
         &--dau {
-            background-color: $color-main-white;
+            left: 50%;
+            top: 50%;
         }
     }
 }
