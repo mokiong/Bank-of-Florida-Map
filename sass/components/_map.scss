@@ -6,6 +6,8 @@
         max-width: 720px;
     }
 
+    margin: 2rem;
+
     ///////////////////// ICONS
     &__icon {
         &:hover,
@@ -133,12 +135,12 @@
             top: 29%;
         }
 
-        &--sanFernando {
+        &--san-fernando {
             left: 43%;
             top: 30%;
         }
 
-        &--staAna {
+        &--sta-ana {
             left: 62%;
             top: 25%;
         }
@@ -212,13 +214,30 @@
     &__location-name {
         position: absolute;
         font-size: 1.8rem;
-        padding: 2px 1rem;
-        padding-top: 0;
+        font-weight: 700;
+        padding: 4px 1.5rem;
         background-color: $color-main-white;
         border-radius: 50px;
-        opacity: 1;
+        opacity: 0;
         z-index: 5;
         transition: all 0.8s;
+
+        &--header {
+            background-color: $color-main-orange;
+            padding: 3px 2rem;
+            z-index: 4;
+            line-height: 150%;
+
+            &-capas {
+                left: 8%;
+                top: 85.5%;
+            }
+
+            &-pulilan {
+                left: 80%;
+                top: 85%;
+            }
+        }
 
         &--dau {
             left: 32%;
@@ -228,6 +247,129 @@
         &--magalang {
             left: 48%;
             top: 8%;
+        }
+
+        &--arayat {
+            left: 60%;
+            top: 20%;
+        }
+
+        &--mt-arayat {
+            left: 68%;
+            top: 10%;
+        }
+
+        &--angeles-city {
+            left: 30%;
+            top: 26%;
+        }
+
+        &--porac-miyamit-falls {
+            left: 0%;
+            top: 35%;
+        }
+
+        &--porac {
+            left: 21%;
+            top: 36%;
+        }
+
+        &--san-fernando {
+            left: 42%;
+            top: 38%;
+        }
+
+        &--sta-ana {
+            left: 61%;
+            top: 32%;
+        }
+
+        &--canbada {
+            left: 75%;
+            top: 36%;
+        }
+
+        &--migratory-birds {
+            left: 77%;
+            top: 25%;
+
+            @media only screen and (max-width: 31.5em) {
+                left: 70%;
+            }
+        }
+
+        &--nabuclod-mountains {
+            left: 19%;
+            top: 37%;
+        }
+
+        &--floridablanca {
+            left: 15%;
+            top: 57.5%;
+        }
+
+        &--jasa {
+            left: 29%;
+            top: 53.5%;
+        }
+
+        &--sta-rita {
+            left: 33.7%;
+            top: 49.5%;
+        }
+
+        &--bacolor {
+            left: 42%;
+            top: 47.5%;
+        }
+
+        &--sto-tomas {
+            left: 56.3%;
+            top: 50%;
+        }
+
+        &--sto-tomas-lubao {
+            left: 30.5%;
+            top: 64.7%;
+        }
+
+        &--sta-cruz {
+            left: 24%;
+            top: 76.7%;
+        }
+
+        &--plaza-burgos {
+            left: 38%;
+            top: 60.5%;
+        }
+
+        &--minalin {
+            left: 52%;
+            top: 59.5%;
+        }
+
+        &--macabebe {
+            left: 51%;
+            top: 71.5%;
+        }
+
+        &--macabebe-river {
+            left: 28%;
+            top: 72.5%;
+        }
+
+        &--capas-shrine {
+            left: 7%;
+            top: 91%;
+        }
+
+        &--pulilan-church {
+            left: 78%;
+            top: 89%;
+
+            @media only screen and (max-width: 31.5em) {
+                left: 70%;
+            }
         }
     }
 }

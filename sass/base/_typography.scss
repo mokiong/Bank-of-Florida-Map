@@ -1,13 +1,21 @@
 .header {
     color: $color-main-brown;
-    font-size: 5rem;
+    font-size: 4rem;
 
     &__pampanga {
         margin: 0 auto;
+        margin-bottom: 1.5rem;
     }
 
     &__tarlac {
-        top: 65%;
-        left: -4%;
+        position: absolute;
+        top: 67%;
+        left: 0%;
+    }
+
+    &__bulacan {
+        position: absolute;
+        top: 70%;
+        left: 76%;
     }
 }
