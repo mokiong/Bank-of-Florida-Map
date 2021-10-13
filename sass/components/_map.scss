@@ -4,17 +4,18 @@
     &__background {
         width: 100%;
         max-width: 720px;
+        z-index: 0;
     }
-
-    margin: 2rem;
 
     ///////////////////// ICONS
     &__icon {
+        z-index: 1;
+
         &:hover,
         &:active {
-            animation-name: moveUpAndDown;
-            animation-duration: 0.5s;
-            animation-timing-function: linear;
+            animation-name: mapImageAnimation;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
 
             & + div {
                 opacity: 1;
@@ -73,7 +74,7 @@
 
         &--capas-shrine {
             width: 8%;
-            left: 0;
+            left: 2%;
             top: 76%;
         }
 
@@ -88,29 +89,24 @@
     &__pin {
         width: 5%;
         position: absolute;
-        filter: drop-shadow(0 0.7rem 0.4rem black);
+        filter: drop-shadow(0 7px 4px rgba(0, 0, 0, 0.5));
+        z-index: 2;
 
         &:hover,
         &:active {
-            animation-name: moveUpAndDown;
-            animation-duration: 0.5s;
-            animation-timing-function: linear;
+            animation-name: mapImageAnimation;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
 
             & + div {
                 opacity: 1;
+                z-index: 3;
             }
         }
 
         &--dau {
             left: 32%;
             top: 2.3%;
-
-            &:hover::after {
-                content: 'Dau';
-                @include location;
-                color: black;
-                animation: none;
-            }
         }
 
         &--magalang {
@@ -121,13 +117,11 @@
         &--arayat {
             left: 60%;
             top: 13%;
-            z-index: 2;
         }
 
         &--angeles-city {
             left: 30%;
             top: 19%;
-            z-index: 2;
         }
 
         &--porac {
@@ -201,7 +195,7 @@
         }
 
         &--capas {
-            left: 9%;
+            left: 11%;
             top: 78%;
         }
 
@@ -213,23 +207,34 @@
 
     &__location-name {
         position: absolute;
-        font-size: 1.8rem;
-        font-weight: 700;
-        padding: 4px 1.5rem;
+        font-size: 16px;
+        padding: 4px 16px;
         background-color: $color-main-white;
+        color: $color-main-brown;
+
         border-radius: 50px;
         opacity: 0;
-        z-index: 5;
+        z-index: 2;
         transition: all 0.8s;
+        font-weight: bold;
+
+        @include respond(phone) {
+            font-size: 14px;
+            padding: 2px 12px;
+        }
 
         &--header {
             background-color: $color-main-orange;
-            padding: 3px 2rem;
-            z-index: 4;
+            padding: 3px 20px;
             line-height: 150%;
 
+            @include respond(phone) {
+                left: 68%;
+                padding: 1.5px 14px;
+            }
+
             &-capas {
-                left: 8%;
+                left: 11%;
                 top: 85.5%;
             }
 
@@ -293,8 +298,8 @@
             left: 77%;
             top: 25%;
 
-            @media only screen and (max-width: 31.5em) {
-                left: 70%;
+            @include respond(phone) {
+                left: 68%;
             }
         }
 
@@ -359,7 +364,7 @@
         }
 
         &--capas-shrine {
-            left: 7%;
+            left: 11%;
             top: 91%;
         }
 
@@ -367,8 +372,9 @@
             left: 78%;
             top: 89%;
 
-            @media only screen and (max-width: 31.5em) {
-                left: 70%;
+            @include respond(phone) {
+                left: 68%;
+                top: 93%;
             }
         }
     }
