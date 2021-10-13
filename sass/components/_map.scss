@@ -8,6 +8,13 @@
 
     ///////////////////// ICONS
     &__icon {
+        &:hover,
+        &:active {
+            animation-name: moveUpAndDown;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+        }
+
         position: absolute;
 
         &--arayat {
@@ -76,7 +83,14 @@
         width: 5%;
         position: absolute;
         filter: drop-shadow(0 0.7rem 0.4rem black);
-        // drop-shadow(offset-x offset-y blur-radius color)
+
+        &:hover,
+        &:active {
+            animation-name: moveUpAndDown;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+        }
+
         &--dau {
             left: 32%;
             top: 2.3%;
@@ -177,6 +191,14 @@
         &--pulilan {
             left: 80%;
             top: 78%;
+        }
+    }
+
+    &__lotaion-name {
+        position: absolute;
+
+        &--dau {
+            background-color: $color-main-white;
         }
     }
 }
