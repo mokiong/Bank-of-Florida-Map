@@ -13,9 +13,7 @@
 
         &:hover,
         &:active {
-            animation-name: mapImageAnimation;
-            animation-duration: 1s;
-            animation-timing-function: ease-out;
+            animation: bounce 1s ease-out;
 
             & + div {
                 opacity: 1;
@@ -94,9 +92,7 @@
 
         &:hover,
         &:active {
-            animation-name: mapImageAnimation;
-            animation-duration: 1s;
-            animation-timing-function: ease-out;
+            animation: bounce 1s ease-out;
 
             & + div {
                 opacity: 1;
