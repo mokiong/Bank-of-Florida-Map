@@ -215,7 +215,7 @@
         border-radius: 50px;
         opacity: 0;
         z-index: 2;
-        transition: all 0.8s;
+        transition: opacity 0.8s;
         font-weight: bold;
 
         @include respond(phone) {
