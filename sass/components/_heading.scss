@@ -1,13 +1,21 @@
 .bof-map__heading {
-    color: $color-main-brown;
+    color: $color-white;
+
+    @include respond(phone) {
+        font-size: 22px;
+    }
 
     &--pampanga {
-        text-align: center;
+        position: absolute;
         font-size: 42px;
         margin-bottom: 16px;
+        top: 82%;
+        left: -25%;
 
         @include respond(phone) {
-            font-size: 32px;
+            font-size: 25px;
+            top: 92%;
+            left: 36%;
         }
     }
 
@@ -15,23 +23,26 @@
         position: absolute;
         font-size: 32px;
 
-        top: 67%;
-        left: 2%;
+        top: -1%;
+        left: -24%;
 
         @include respond(phone) {
             font-size: 22px;
+            top: 79%;
+            left: 1.5%;
         }
     }
 
     &--bulacan {
         position: absolute;
         font-size: 32px;
-
-        top: 68%;
-        left: 76%;
+        top: 56%;
+        left: 92%;
 
         @include respond(phone) {
             font-size: 22px;
+            top: 62%;
+            left: 75%;
         }
     }
 }

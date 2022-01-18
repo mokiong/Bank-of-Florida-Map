@@ -3,20 +3,26 @@
 
     &__background {
         width: 100%;
-        max-width: 720px;
+        max-width: 720px !important;
         z-index: 0;
     }
 
+    font-family: 'aeonik-bold';
+
+    overflow: visible;
+
     ///////////////////// ICONS
     &__icon {
+        cursor: pointer;
         z-index: 1;
 
         &:hover,
-        &:active {
+        &:active,
+        &:focus {
             animation: bounce 1s ease-out;
 
             & + div {
-                opacity: 1;
+                display: block;
                 z-index: 3;
             }
         }
@@ -30,135 +36,147 @@
         }
 
         &--city {
-            width: 30%;
-            left: 15%;
-            top: 9%;
+            width: 22%;
+            left: 18%;
+            top: 8%;
         }
 
         &--porac-miyamit-falls {
-            width: 15%;
-            left: 7%;
-            top: 23%;
+            width: 17%;
+            left: 3%;
+            top: 10%;
         }
 
         &--building {
             width: 11%;
-            left: 47%;
-            top: 17.5%;
+            left: 46%;
+            top: 18.5%;
         }
 
         &--migratory-birds {
-            width: 22%;
-            left: 76%;
-            top: 13%;
+            width: 17%;
+            left: 81%;
+            top: 15%;
         }
 
         &--nabuclod-mountains {
-            width: 25%;
-            left: 5%;
-            top: 37.5%;
+            width: 26%;
+            left: -1%;
+            top: 34.5%;
         }
 
         &--church {
-            width: 12%;
-            left: 21%;
-            top: 58.5%;
+            width: 11%;
+            left: 15%;
+            top: 51.5%;
         }
 
         &--macabebe-river {
-            width: 15%;
-            left: 44%;
-            top: 74.5%;
+            width: 7%;
+            left: 35%;
+            top: 67.5%;
         }
 
         &--capas-shrine {
             width: 8%;
-            left: 2%;
-            top: 76%;
+            left: -27%;
+            top: 28%;
+
+            @include respond(phone) {
+                left: 19%;
+                top: 75%;
+            }
         }
 
         &--pulilan-church {
             width: 15%;
-            left: 63%;
-            top: 76%;
+            left: 70%;
+            top: 69%;
+
+            @include respond(phone) {
+                left: 71%;
+                top: 74%;
+            }
         }
     }
 
     ///////////////////// PINS
     &__pin {
-        width: 5%;
+        cursor: pointer;
+        width: 4%;
         position: absolute;
         filter: drop-shadow(0 7px 4px rgba(0, 0, 0, 0.5));
         z-index: 2;
 
         &:hover,
-        &:active {
+        &:active,
+        &:focus {
             animation: bounce 1s ease-out;
 
             & + div {
-                opacity: 1;
+                display: block;
                 z-index: 3;
             }
         }
 
         &--dau {
-            left: 32%;
-            top: 2.3%;
+            left: 36%;
+            top: -0.7%;
         }
 
         &--magalang {
-            left: 48%;
-            top: 1.1%;
+            left: 50%;
+            top: -0.9%;
         }
 
         &--arayat {
-            left: 60%;
-            top: 13%;
+            left: 62%;
+            top: 14%;
         }
 
         &--angeles-city {
-            left: 30%;
-            top: 19%;
+            left: 36%;
+            top: 14%;
         }
 
         &--porac {
-            left: 22%;
-            top: 29%;
+            left: 19%;
+            top: 25%;
         }
 
         &--san-fernando {
-            left: 43%;
-            top: 30%;
+            left: 40%;
+            top: 27%;
         }
 
         &--sta-ana {
-            left: 62%;
+            left: 59%;
             top: 25%;
         }
 
         &--canbada {
-            left: 76%;
+            left: 71%;
             top: 28%;
         }
 
         &--floridablanca {
-            left: 15%;
-            top: 50%;
+            left: 10%;
+            top: 44%;
         }
 
         &--jasa {
-            left: 29%;
-            top: 46%;
+            left: 23%;
+            top: 41%;
         }
 
         &--sta-rita {
-            left: 34%;
-            top: 42%;
+            left: 29%;
+            top: 39%;
         }
 
         &--bacolor {
-            left: 42%;
-            top: 40%;
+            left: 37%;
+            top: 38%;
         }
 
         &--sto-tomas {
@@ -167,53 +185,69 @@
         }
 
         &--sta-cruz {
-            left: 24.5%;
-            top: 69.5%;
+            left: 13.5%;
+            top: 62.5%;
         }
 
         &--sto-tomas-lubao {
-            left: 31%;
-            top: 57%;
-        }
-
-        &--plaza-burgos {
-            left: 41%;
+            left: 24%;
             top: 53%;
         }
 
+        &--plaza-burgos {
+            left: 33%;
+            top: 49%;
+        }
+
         &--minalin {
-            left: 52%;
-            top: 52%;
+            left: 41%;
+            top: 51%;
         }
 
         &--macabebe {
-            left: 52%;
-            top: 64.5%;
+            left: 40%;
+            top: 62.5%;
         }
 
         &--capas {
-            left: 11%;
-            top: 78%;
+            left: -28%;
+            top: 10%;
+
+            @include respond(phone) {
+                left: 14%;
+                top: 89%;
+            }
         }
 
         &--pulilan {
-            left: 80%;
-            top: 78%;
+            left: 85%;
+            top: 64%;
+
+            @include respond(phone) {
+                left: 72%;
+                top: 72%;
+            }
         }
     }
 
     &__location-name {
         position: absolute;
-        font-size: 16px;
-        padding: 4px 16px;
-        background-color: $color-main-white;
-        color: $color-main-brown;
+        font-size: 12px;
+        padding: 5px 8px;
+        background-color: $color-blue;
+        color: $color-white;
+        text-align: center;
 
-        border-radius: 50px;
-        opacity: 0;
+        border-radius: 5px;
+        display: none;
         z-index: 2;
-        transition: opacity 0.8s;
         font-weight: bold;
+
+        &--brown {
+            padding: 7px 10px;
+            border-radius: 20px;
+            background-color: $color-brown;
+        }
 
         @include respond(phone) {
             font-size: 14px;
@@ -221,108 +255,133 @@
         }
 
         &--header {
-            background-color: $color-main-orange;
-            padding: 3px 20px;
-            line-height: 150%;
+            background-color: $color-yellow;
+            padding: 4px 15px;
+            font-size: 20px;
+            color: $color-blue;
+
+            border-radius: 25px;
 
             @include respond(phone) {
                 left: 68%;
-                padding: 1.5px 14px;
+                padding: 1.5px 12px;
+                font-size: 14px;
             }
 
             &-capas {
-                left: 11%;
-                top: 85.5%;
+                left: -26%;
+                top: 19%;
+
+                @include respond(phone) {
+                    left: 3%;
+                    top: 97%;
+                }
             }
 
             &-pulilan {
-                left: 80%;
-                top: 85%;
+                left: 86%;
+                top: 72%;
+
+                @include respond(phone) {
+                    left: 57%;
+                    top: 80%;
+                }
             }
         }
 
         &--dau {
-            left: 32%;
-            top: 9%;
+            left: 37%;
+            top: 7%;
         }
 
         &--magalang {
-            left: 48%;
-            top: 8%;
+            left: 51%;
+            top: 7%;
         }
 
         &--arayat {
-            left: 60%;
-            top: 20%;
+            left: 63%;
+            top: 22%;
         }
 
         &--mt-arayat {
-            left: 68%;
-            top: 10%;
+            left: 74%;
+            top: 11%;
         }
 
         &--angeles-city {
-            left: 30%;
-            top: 26%;
+            left: 35%;
+            top: 22%;
         }
 
         &--porac-miyamit-falls {
-            left: 0%;
-            top: 35%;
+            left: -6%;
+            top: 24%;
+
+            @include respond(phone) {
+                left: 1%;
+                top: 11%;
+            }
         }
 
         &--porac {
-            left: 21%;
-            top: 36%;
+            left: 20%;
+            top: 33%;
         }
 
         &--san-fernando {
-            left: 42%;
-            top: 38%;
+            left: 41%;
+            top: 35%;
         }
 
         &--sta-ana {
-            left: 61%;
-            top: 32%;
+            left: 60%;
+            top: 33%;
         }
 
         &--canbada {
-            left: 75%;
+            left: 72%;
             top: 36%;
         }
 
         &--migratory-birds {
-            left: 77%;
-            top: 25%;
+            left: 82%;
+            top: 30%;
 
             @include respond(phone) {
-                left: 68%;
+                left: 63%;
+                top: 28%;
             }
         }
 
         &--nabuclod-mountains {
-            left: 19%;
-            top: 37%;
+            left: -11%;
+            top: 42%;
+
+            @include respond(phone) {
+                left: 3%;
+                top: 31%;
+            }
         }
 
         &--floridablanca {
-            left: 15%;
-            top: 57.5%;
+            left: 11%;
+            top: 52%;
         }
 
         &--jasa {
-            left: 29%;
-            top: 53.5%;
+            left: 24%;
+            top: 49%;
         }
 
         &--sta-rita {
-            left: 33.7%;
-            top: 49.5%;
+            left: 30%;
+            top: 47%;
         }
 
         &--bacolor {
-            left: 42%;
-            top: 47.5%;
+            left: 38%;
+            top: 45.5%;
         }
 
         &--sto-tomas {
@@ -331,43 +390,48 @@
         }
 
         &--sto-tomas-lubao {
-            left: 30.5%;
-            top: 64.7%;
+            left: 25.5%;
+            top: 60.7%;
         }
 
         &--sta-cruz {
-            left: 24%;
-            top: 76.7%;
+            left: 15%;
+            top: 70%;
         }
 
         &--plaza-burgos {
-            left: 38%;
-            top: 60.5%;
+            left: 34%;
+            top: 57%;
         }
 
         &--minalin {
-            left: 52%;
-            top: 59.5%;
+            left: 42%;
+            top: 59%;
         }
 
         &--macabebe {
-            left: 51%;
-            top: 71.5%;
+            left: 41%;
+            top: 70%;
         }
 
         &--macabebe-river {
-            left: 28%;
-            top: 72.5%;
+            left: 20%;
+            top: 70.5%;
         }
 
         &--capas-shrine {
-            left: 11%;
-            top: 91%;
+            left: -22%;
+            top: 31%;
+
+            @include respond(phone) {
+                left: 24%;
+                top: 86%;
+            }
         }
 
         &--pulilan-church {
-            left: 78%;
-            top: 89%;
+            left: 86%;
+            top: 82%;
 
             @include respond(phone) {
                 left: 68%;
