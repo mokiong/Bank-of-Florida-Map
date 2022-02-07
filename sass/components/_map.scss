@@ -83,8 +83,8 @@
             top: 28%;
 
             @include respond(phone) {
-                left: 19%;
-                top: 75%;
+                left: 20%;
+                top: 95%;
             }
         }
 
@@ -94,8 +94,8 @@
             top: 69%;
 
             @include respond(phone) {
-                left: 71%;
-                top: 74%;
+                left: 80%;
+                top: 82%;
             }
         }
     }
@@ -164,7 +164,7 @@
             top: 44%;
         }
 
-        &--jasa {
+        &--guagua-jasa {
             left: 23%;
             top: 41%;
         }
@@ -194,7 +194,7 @@
             top: 53%;
         }
 
-        &--plaza-burgos {
+        &--guagua-plaza {
             left: 33%;
             top: 49%;
         }
@@ -210,22 +210,22 @@
         }
 
         &--capas {
-            left: -28%;
-            top: 10%;
+            left: -18%;
+            top: 39%;
 
             @include respond(phone) {
                 left: 14%;
-                top: 89%;
+                top: 105%;
             }
         }
 
         &--pulilan {
-            left: 85%;
-            top: 64%;
+            left: 86%;
+            top: 77%;
 
             @include respond(phone) {
-                left: 72%;
-                top: 72%;
+                left: 78%;
+                top: 86%;
             }
         }
     }
@@ -274,22 +274,22 @@
             }
 
             &-capas {
-                left: -26%;
-                top: 19%;
+                left: -13%;
+                top: 41%;
 
                 @include respond(phone) {
                     left: 3%;
-                    top: 97%;
+                    top: 116%;
                 }
             }
 
             &-pulilan {
-                left: 86%;
-                top: 72%;
+                left: 91%;
+                top: 79%;
 
                 @include respond(phone) {
-                    left: 57%;
-                    top: 80%;
+                    left: 60%;
+                    top: 89%;
                 }
             }
         }
@@ -374,7 +374,7 @@
             top: 52%;
         }
 
-        &--jasa {
+        &--guagua-jasa {
             left: 24%;
             top: 49%;
         }
@@ -404,7 +404,7 @@
             top: 70%;
         }
 
-        &--plaza-burgos {
+        &--guagua-plaza {
             left: 34%;
             top: 57%;
         }
@@ -425,22 +425,22 @@
         }
 
         &--capas-shrine {
-            left: -22%;
-            top: 31%;
+            left: -18%;
+            top: 51%;
 
             @include respond(phone) {
-                left: 24%;
-                top: 86%;
+                left: 29%;
+                top: 114%;
             }
         }
 
         &--pulilan-church {
-            left: 80%;
-            top: 82%;
+            left: 86%;
+            top: 90%;
 
             @include respond(phone) {
-                left: 42%;
-                top: 86%;
+                left: 50%;
+                top: 102%;
             }
         }
     }

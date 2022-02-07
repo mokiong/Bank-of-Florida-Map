@@ -8,10 +8,10 @@
 
     &--pampanga {
         position: absolute;
-        font-size: 42px;
+        font-size: 36px;
         margin-bottom: 16px;
         top: 82%;
-        left: -25%;
+        left: -24%;
 
         @include respond(phone) {
             font-size: 25px;
@@ -24,26 +24,26 @@
         position: absolute;
         font-size: 32px;
 
-        top: -1%;
-        left: -24%;
+        top: 25%;
+        left: -20%;
 
         @include respond(phone) {
             font-size: 22px;
-            top: 77%;
-            left: -3.5%;
+            top: 92%;
+            left: 0%;
         }
     }
 
     &--bulacan {
         position: absolute;
         font-size: 32px;
-        top: 56%;
-        left: 92%;
+        top: 64%;
+        left: 85%;
 
         @include respond(phone) {
             font-size: 22px;
-            top: 62%;
-            left: 77%;
+            top: 72%;
+            left: 73%;
         }
     }
 }
