@@ -243,6 +243,11 @@
         z-index: 2;
         font-weight: bold;
 
+        &:hover {
+            display: block;
+            z-index: 5;
+        }
+
         &--brown {
             padding: 7px 10px;
             border-radius: 20px;
@@ -305,8 +310,8 @@
         }
 
         &--mt-arayat {
-            left: 74%;
-            top: 11%;
+            left: 69%;
+            top: 6%;
         }
 
         &--angeles-city {
@@ -345,11 +350,11 @@
         }
 
         &--migratory-birds {
-            left: 82%;
+            left: 75%;
             top: 30%;
 
             @include respond(phone) {
-                left: 63%;
+                left: 58%;
                 top: 28%;
             }
         }
@@ -430,12 +435,12 @@
         }
 
         &--pulilan-church {
-            left: 86%;
+            left: 80%;
             top: 82%;
 
             @include respond(phone) {
-                left: 68%;
-                top: 93%;
+                left: 42%;
+                top: 86%;
             }
         }
     }

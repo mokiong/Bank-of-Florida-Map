@@ -1,5 +1,6 @@
 .bof-map__heading {
     color: $color-white;
+    margin: 0px 0px !important;
 
     @include respond(phone) {
         font-size: 22px;
@@ -14,8 +15,8 @@
 
         @include respond(phone) {
             font-size: 25px;
-            top: 92%;
-            left: 36%;
+            top: -20%;
+            left: 31%;
         }
     }
 
@@ -28,8 +29,8 @@
 
         @include respond(phone) {
             font-size: 22px;
-            top: 79%;
-            left: 1.5%;
+            top: 77%;
+            left: -3.5%;
         }
     }
 
@@ -42,7 +43,7 @@
         @include respond(phone) {
             font-size: 22px;
             top: 62%;
-            left: 75%;
+            left: 77%;
         }
     }
 }
